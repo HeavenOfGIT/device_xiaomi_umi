@@ -5,7 +5,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/fluid_umi.mk
+    $(LOCAL_DIR)/kangos_umi.mk
 
 COMMON_LUNCH_CHOICES := \
     kangos_umi-user \

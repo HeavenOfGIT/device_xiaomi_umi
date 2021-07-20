@@ -38,9 +38,6 @@ PRODUCT_PACKAGES += \
 # Atrace
 PRODUCT_PACKAGES += \
     android.hardware.atrace@1.0-service
-
-# ANX camera
-$(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
     
 # Additional native libraries
 PRODUCT_COPY_FILES += \
@@ -238,7 +235,7 @@ PRODUCT_COPY_FILES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-fluid
     
 # Perf
 PRODUCT_PACKAGES += \
@@ -343,6 +340,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/seccomp/wfdhdcphalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdhdcphalservice.policy \
     $(LOCAL_PATH)/configs/seccomp/wfdvndservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdvndservice.policy \
     $(LOCAL_PATH)/configs/seccomp/wifidisplayhalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wifidisplayhalservice.policy \
+
+# SQLite
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/SQlite/sqlite3:$(TARGET_COPY_OUT_SYSTEM)/xbin/sqlite3
 
 # Rootdir
 PRODUCT_PACKAGES += \

@@ -8,6 +8,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/fluid_umi.mk
 
 COMMON_LUNCH_CHOICES := \
-    fluid_umi-user \
-    fluid_umi-userdebug \
-    fluid_umi-eng
+    kangos_umi-user \
+    kangos_umi-userdebug \
+    kangos_umi-eng

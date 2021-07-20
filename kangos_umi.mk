@@ -7,7 +7,7 @@
 $(call inherit-product, device/xiaomi/umi/device.mk)
 
 # Inherit some common KangOS stuff.
-$(call inherit-product, vendor/kangos/config/common_full_phone.mk)
+$(call inherit-product, vendor/kangos/config/common.mk)
 
 # Include firmware
 $(call inherit-product, vendor/xiaomi/umi/firmware/firmware.mk)

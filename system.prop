@@ -5,6 +5,12 @@ persist.audio.fluence.voicecall=true
 persist.audio.fluence.speaker=true
 tunnel.audio.encode = true
 
+# Bluetooth
+persist.vendor.bt.a2dp.aac_whitelist=false
+persist.vendor.btstack.enable.twsplus=true
+persist.vendor.btstack.enable.twsplussho=true
+ro.bluetooth.library_name=libbluetooth_qti.so
+
 # Camera
 camera.disable_zsl_mode=true
 

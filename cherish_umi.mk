@@ -6,18 +6,20 @@
 
 $(call inherit-product, device/xiaomi/umi/device.mk)
 
-# Inherit some common Fluid stuff.
-$(call inherit-product, vendor/wave/config/common.mk)
+# Inherit some common LineageOS stuff.
+$(call inherit-product, vendor/cherish/config/common.mk)
 
 # Include firmware
 $(call inherit-product, vendor/xiaomi/umi/firmware/firmware.mk)
 
 # GApps
-$(call inherit-product-if-exists, vendor/google/gms/config.mk)
 TARGET_GAPPS_ARCH := arm64
+$(call inherit-product-if-exists, vendor/gapps/config.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := wave_umi
+PRODUCT_NAME := cherish_umi
 PRODUCT_DEVICE := umi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 10

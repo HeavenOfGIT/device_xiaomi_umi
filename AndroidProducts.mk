@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/wave_umi.mk
+    $(LOCAL_DIR)/cherish_umi.mk
 
 COMMON_LUNCH_CHOICES := \
-    wave_umi-user \
-    wave_umi-userdebug \
-    wave_umi-eng
+    cherish_umi-user \
+    cherish_umi-userdebug \
+    cherish_umi-eng

@@ -311,10 +311,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.power.stats@1.0-service.mock
 
-# PowerShare
-PRODUCT_PACKAGES += \
-    vendor.lineage.powershare@1.0-service.xiaomi_kona
-    
 # QMI
 PRODUCT_PACKAGES += \
     libjson \

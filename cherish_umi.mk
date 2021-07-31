@@ -9,9 +9,6 @@ $(call inherit-product, device/xiaomi/umi/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/cherish/config/common.mk)
 
-# Include firmware
-$(call inherit-product, vendor/xiaomi/umi/firmware/firmware.mk)
-
 # GApps
 TARGET_GAPPS_ARCH := arm64
 $(call inherit-product-if-exists, vendor/gapps/config.mk)

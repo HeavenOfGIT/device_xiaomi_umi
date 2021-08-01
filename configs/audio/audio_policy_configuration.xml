@@ -237,11 +237,8 @@
                 </devicePort>
                 <devicePort tagName="BT SCO Headset" type="AUDIO_DEVICE_OUT_BLUETOOTH_SCO_HEADSET" role="sink">
                 </devicePort>
-<<<<<<< HEAD
-=======
                 <devicePort tagName="BT SCO Car Kit" type="AUDIO_DEVICE_OUT_BLUETOOTH_SCO_CARKIT" role="sink">
                 </devicePort>
->>>>>>> parent of 3609a3c (umi: Switch to QTI hal)
                 <devicePort tagName="Telephony Tx" type="AUDIO_DEVICE_OUT_TELEPHONY_TX" role="sink">
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
                              samplingRates="8000,16000" channelMasks="AUDIO_CHANNEL_OUT_MONO,AUDIO_CHANNEL_OUT_STEREO"/>
@@ -348,15 +345,12 @@
                        sources="Built-In Mic,Built-In Back Mic,BT SCO Headset Mic,USB Device In,USB Headset In,Wired Headset Mic"/>
             </routes>
 
-<<<<<<< HEAD
+
         </module>  
-=======
-        </module>
 
         <!-- A2DP Audio HAL -->
         <xi:include href="a2dp_in_audio_policy_configuration.xml"/>     
 
->>>>>>> parent of 3609a3c (umi: Switch to QTI hal)
         <!-- Usb Audio HAL -->
         <module name="usb" halVersion="2.0">
             <mixPorts>
@@ -386,12 +380,9 @@
 
     <!-- Volume section -->
 
-<<<<<<< HEAD
-=======
     <xi:include href="audio_policy_volumes.xml"/>
     <xi:include href="default_volume_tables.xml"/>
 
->>>>>>> parent of 3609a3c (umi: Switch to QTI hal)
     <!-- End of Volume section -->
 
 </audioPolicyConfiguration>

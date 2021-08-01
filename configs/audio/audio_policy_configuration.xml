@@ -41,7 +41,6 @@
         defined in <devicePorts> section.
         “defaultOutputDevice”: device to be used by default when no policy rule applies
     -->
-    <modules>
         <!-- Primary Audio HAL -->
         <module name="primary" halVersion="2.0">
             <attachedDevices>
@@ -387,8 +386,6 @@
         <xi:include href="/vendor/etc/audio_policy_volumes.xml"/>
          <xi:include href="/vendor/etc/default_volume_tables.xml"/>
 
-
-    </modules>
     <!-- End of Modules section -->
 
     <!-- Volume section -->

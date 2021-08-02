@@ -32,6 +32,23 @@
         <item>com.google.android.gms/com.google.android.gms.nearby.discovery.service.DiscoveryService</item>
     </string-array>
 
+     <!-- Should we filter any display modes which are unampped? -->
+    <bool name="config_filterDisplayModes">true</bool>
+
+    <!-- Display mode remapping table.
+        If the mode names returned by the backend do not match
+        the predefined and translated strings in the Settings
+        app, they can be remapped here. The format is
+        "oldname:newname", one per entry. -->
+    <string-array name="config_displayModeMappings" translatable="false">
+        <item>standard:Standard</item>
+        <item>hal_native:Natural</item>
+        <item>smart_MC:Adaptive</item>
+        <item>vivid:Saturated</item>
+        <item>hal_srgb:srgb</item>
+        <item>video1:Movie</item>
+    </string-array>
+
     <!-- The component name, flattened to a string, for the default autofill service
          to  enabled for an user. This service must be trusted, as it can be activated
          without explicit consent of the user. If no autofill service with the

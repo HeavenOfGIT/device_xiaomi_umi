@@ -1,4 +1,3 @@
-#
 # Copyright (C) 2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -243,7 +242,7 @@ PRODUCT_COPY_FILES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-fluid
+    $(LOCAL_PATH)/overlay-cherish
     
 # Perf
 PRODUCT_PACKAGES += \

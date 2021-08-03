@@ -21,8 +21,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Get non-open-source specific aspects
-$(call inherit-product, vendor/xiaomi/umi/umi-vendor.mk)
 
 # Device Flags
 PRODUCT_BUILD_SUPER_PARTITION := false

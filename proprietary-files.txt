@@ -1,3 +1,4 @@
+# All unpinned blobs are from UMI 12.5.5
 # ADSP
 vendor/bin/adsprpcd
 vendor/bin/dspservice

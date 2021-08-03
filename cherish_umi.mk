@@ -13,8 +13,9 @@ $(call inherit-product, vendor/cherish/config/common.mk)
 TARGET_GAPPS_ARCH := arm64
 $(call inherit-product-if-exists, vendor/gapps/config.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_INCLUDE_LIVE_WALLPAPERS := true
+
 TARGET_USE_GAPPS := true
+CHERISH_BUILD_TYPE := OFFICIAL
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := cherish_umi

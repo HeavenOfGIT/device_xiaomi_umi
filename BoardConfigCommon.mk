@@ -19,7 +19,7 @@ BUILD_BROKEN_DUP_RULES := true
 
 COMMON_PATH := device/xiaomi/sm8250-common
 
-TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
+TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
 
 # Architecture
 TARGET_ARCH := arm64

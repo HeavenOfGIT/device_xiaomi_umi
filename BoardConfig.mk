@@ -17,9 +17,9 @@
 
 BUILD_BROKEN_DUP_RULES := true
 
-COMMON_PATH := device/xiaomi/sm8250-common
+DEVICE_PATH := device/xiaomi/umi
 
-TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
+TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
 # Assert 
 TARGET_OTA_ASSERT_DEVICE := umi
@@ -62,7 +62,7 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := kryo385
 TARGET_USES_64_BIT_BINDER := true
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_PATH)/bluetooth/include
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
 TARGET_USE_QTI_BT_STACK := true
 
@@ -103,7 +103,7 @@ BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
 HEALTHD_USE_BATTERY_INFO := true
 
 # Camera
-TARGET_USES_QTI_CAMERA_COMMON := true
+TARGET_USES_QTI_CAMERA_DEVICE := true
 USE_DEVICE_SPECIFIC_CAMERA := true
 TARGET_CAMERA_BOOTTIME_TIMESTAMP := true
 
@@ -121,14 +121,14 @@ TARGET_SCREEN_DENSITY := 380
 TARGET_ENABLE_MEDIADRM_64 := true
 
 # Filesystem
-TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
 # FOD
-TARGET_SURFACEFLINGER_FOD_LIB := //$(COMMON_PATH):libfod_extension.kona
+TARGET_SURFACEFLINGER_FOD_LIB := //$(DEVICE_PATH):libfod_extension.kona
 
 # HIDL
-COMMON_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
-COMMON_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
@@ -175,16 +175,16 @@ BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := kona
 
 # Power
-TARGET_POWERHAL_MODE_EXT := $(COMMON_PATH)/power-mode.cpp
+TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power-mode.cpp
 
 # Recovery
 BOARD_INCLUDE_RECOVERY_DTBO := true
-TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_USES_MKE2FS := true
 
 # Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
+TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
@@ -194,13 +194,13 @@ USE_SENSOR_MULTI_HAL := true
 
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
-BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/public
-BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 BOARD_SEPOLICY_M4DEFS += \
     debugfs_clk=vendor_debugfs_clk \
     debugfs_ipc=vendor_debugfs_ipc \
-    latency_COMMON=vendor_latency_COMMON \
+    latency_DEVICE=vendor_latency_DEVICE \
     nfc_vendor_data_file=vendor_nfc_vendor_data_file \
     persist_audio_file=vendor_persist_audio_file \
     persist_sensors_file=vendor_persist_sensors_file \
@@ -260,4 +260,4 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
 
 # Inherit from the proprietary version
--include vendor/xiaomi/sm8250-common/BoardConfigVendor.mk
+-include vendor/xiaomi/sm8250-DEVICE/BoardConfigVendor.mk

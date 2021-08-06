@@ -454,7 +454,7 @@ PRODUCT_PACKAGES += \
     libwfdaac_vendor
 
 PRODUCT_BOOT_JARS += \
-    Wfdcommon
+    WfdCommon
 
 PRODUCT_COPY_FILES += \
      $(DEVICE_PATH)/configs/privapp-permissions-wfd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/privapp-permissions-wfd.xml

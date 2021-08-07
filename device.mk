@@ -226,11 +226,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
      $(DEVICE_PATH)/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf
     
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(DEVICE_PATH)/overlay \
-    $(DEVICE_PATH)/overlay-cherish
-    
 # Perf
 PRODUCT_PACKAGES += \
      vendor.qti.hardware.perf@2.0.vendor\
